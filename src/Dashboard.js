@@ -158,33 +158,33 @@ function Dashboard() {
 
 
     let navs = [
-        { path: '/', type: 'link', iconComponent: faTachometerAlt, name: 'Dashboard' },
+        { path: '/dashboard/', type: 'link', iconComponent: faTachometerAlt, name: 'Dashboard' },
         { type: 'request', iconComponent: faHandHoldingMedical, name: 'My Requests', requests: [{ id: 2123, bloodGroup: 'O+' }, { id: 3423, bloodGroup: 'AB+' }, { id: 343423, bloodGroup: 'AB+' }, { id: 342233, bloodGroup: 'AB+' }, { id: 34423, bloodGroup: 'AB+' }, { id: 34233, bloodGroup: 'AB+' }] },
 
 
-        { path: '/help-people', type: 'link', iconComponent: faPeopleCarry, name: 'Help People' },
-        { path: '/make-request', type: 'link', iconComponent: faTachometerAlt, name: 'Make A Request' },
-        { path: '/current-blood-donations', type: 'link', iconComponent: faRunning, name: 'Current Blood Donations' },
-        { path: '/your-blood-requests', type: 'link', iconComponent: faChild, name: 'Your Blood Requests' },
-        { path: '/your-donor-requests', type: 'link', iconComponent: faBookMedical, name: 'Your Donor Requests' },
+        { path: '/dashboard/help-people/', type: 'link', iconComponent: faPeopleCarry, name: 'Help People' },
+        { path: '/dashboard/make-request/', type: 'link', iconComponent: faTachometerAlt, name: 'Make A Request' },
+        { path: '/dashboard/current-blood-donations/', type: 'link', iconComponent: faRunning, name: 'Current Blood Donations' },
+        { path: '/dashboard/your-blood-requests/', type: 'link', iconComponent: faChild, name: 'Your Blood Requests' },
+        { path: '/dashboard/your-donor-requests/', type: 'link', iconComponent: faBookMedical, name: 'Your Donor Requests' },
 
         { type: 'nav-header', name: 'Contact Options' },
 
-        { path: '/messages', type: 'link', iconComponent: faComments, name: 'Messages' },
-        { path: '/notifications', type: 'link', iconComponent: faBell, name: 'Notifications' },
-        { path: '/favorites', type: 'link', iconComponent: faUsers, name: 'Favorites' },
+        { path: '/dashboard/messages/', type: 'link', iconComponent: faComments, name: 'Messages' },
+        { path: '/dashboard/notifications/', type: 'link', iconComponent: faBell, name: 'Notifications' },
+        { path: '/dashboard/favorites/', type: 'link', iconComponent: faUsers, name: 'Favorites' },
 
         { type: 'nav-header', name: 'Profile Options' },
 
-        { path: '/profile', type: 'link', iconComponent: faUserAlt, name: 'My Profile' },
+        { path: '/dashboard/profile/', type: 'link', iconComponent: faUserAlt, name: 'My Profile' },
 
         { type: 'nav-header', name: 'Settings' },
 
         {
             type: 'settings', iconComponent: faCogs, name: 'My Requests', options: [
-                { path: '/settings/privacy', name: 'Privacy' },
-                { path: '/settings/edit-account', name: 'Edit Account' },
-                { path: '/settings/edit-profile', name: 'Edit Profile' }
+                { path: '/dashboard/settings/privacy/', name: 'Privacy' },
+                { path: '/dashboard/settings/edit-account/', name: 'Edit Account' },
+                { path: '/dashboard/settings/edit-profile/', name: 'Edit Profile' }
             ]
         },
 

@@ -6,12 +6,13 @@ import {
   Router
 } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group'
-import LoginSignup from './components/LoginSignup'
+import Account from './components/account/Account'
 
 function App() {
 
   let navs = [
-    { path: '', component: Dashboard, animationClassName: 'page-1' },
+    { path: '/account/', component: Account, animationClassName: 'page-1',  exact:true},
+    { path: '/dashboard/', component: Dashboard, animationClassName: 'page-1', exact:false },
   ]
   
   
@@ -21,7 +22,7 @@ function App() {
         navs.map((nav, index) => {
 
           return (
-            <Route key={index + 1} exact path={nav.path}>
+            <Route key={index + 1} exact={nav.exact} path={nav.path}>
               {({ match }) => (
                 <>
                   <CSSTransition in={match != null} timeout={600} classNames={nav.animationClassName} unmountOnExit>

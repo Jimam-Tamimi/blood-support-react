@@ -1,4 +1,4 @@
-import '../css/Messages.css'
+import '../../css/Messages.css'
 import { useRef, useEffect } from 'react'
 import { Link, NavLink, Redirect, useHistory, withRouter, Route } from "react-router-dom";
 import MessagesSection from './subcomponents/MessagesSection'
@@ -24,7 +24,7 @@ function Messages(props) {
         if(props.match.params.messageid == undefined){
             // this id will be fetched from db 
             let id = 433545
-            props.history.push(`/messages/${id}`)
+            props.history.push(`/dashboard/messages/${id}`)
         }
         
         console.log('Message mounting');
@@ -53,21 +53,21 @@ function Messages(props) {
                 <div ref={contactOptions} id="contacts-section" className="contacts-section ">
                     <div className="contact-cont">
 
-                        <NavLink onClick={openContactSection} to="/messages/54546454556" className="contact">
+                        <NavLink onClick={openContactSection} to="/dashboard/messages/54546454556" className="contact">
                             <div style={{ background: 'url(/media/blood/request-img/2.jpg)' }} className="contact-img"></div>
                             <div className="det-text">
                                 <p className="name">Jimam Tamimi</p>
                                 <p className="last-msg">A quick brown fox </p>
                             </div>
                         </NavLink>
-                        <NavLink onClick={openContactSection} to="/messages/54545455456" className="contact">
+                        <NavLink onClick={openContactSection} to="/dashboard/messages/54545455456" className="contact">
                             <div style={{ background: 'url(/media/blood/request-img/2.jpg)' }} className="contact-img"></div>
                             <div className="det-text">
                                 <p className="name">Jimam Tamimi</p>
                                 <p className="last-msg">A quick brown fox </p>
                             </div>
                         </NavLink>
-                        <NavLink onClick={openContactSection} to="/messages/54544545456" className="contact">
+                        <NavLink onClick={openContactSection} to="/dashboard/messages/54544545456" className="contact">
                             <div style={{ background: 'url(/media/blood/request-img/2.jpg)' }} className="contact-img"></div>
                             <div className="det-text">
                                 <p className="name">Jimam Tamimi</p>
@@ -78,7 +78,7 @@ function Messages(props) {
                     </div>
                 </div>
                 <div id="messages-section" className="messages-section">
-                    <Route key={1} exact path="/messages/:messageid">
+                    <Route key={1} exact path="/dashboard/messages/:messageid">
 
                         < MessagesSection messageSection={messageSection} scrollToBottom={scrollToBottom} contactOptionsToggler={contactOptionsToggler} openContactSection={openContactSection} />
 
