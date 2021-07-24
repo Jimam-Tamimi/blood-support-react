@@ -1,0 +1,296 @@
+.contacts-section {
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
+    max-width: 360px;
+    transition: all .5s;
+
+}
+
+.messages-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+#msg-nav-bar-rem {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+#container-parent {
+    min-height: 153px;
+    height: 100vh;
+    margin-top: 0 !important;
+}
+
+.my-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 68px);
+}
+
+.contact {
+    background: #dfe6ec;
+    padding: 15px 8px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    width: 98%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background: #d0dde9;
+}
+
+.contact-cont {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.name,
+.last-msg {
+    /* margin: 0 !important; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.messages {
+    height: 90%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.send-messages {
+    display: flex;
+    height: 10%;
+    margin-top: auto;
+
+
+
+}
+
+#message-to-send {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-top: 1px solid black;
+    padding-left: 10px;
+
+}
+
+#send {
+    width: 10%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #007bff;
+    cursor: pointer;
+}
+
+#send i {
+    color: #dfe6ec;
+    transition: all .4s ease-out;
+}
+
+.sent {
+    max-width: 90%;
+    background: #0084ff;
+    color: #ffffff;
+    font-size: .95rem;
+    padding: 15px 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+    margin: 10px 20px;
+    float: right;
+    margin-left: auto;
+
+}
+
+.got {
+    max-width: 90%;
+    background: #e4e6eb;
+    color: #050505;
+    font-size: .95rem;
+    padding: 15px 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    margin: 10px 20px;
+    margin-right: auto;
+
+}
+
+.message {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.status {
+    position: relative;
+    right: 0;
+}
+
+.status div {
+
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 200px;
+    position: absolute;
+    right: -33px;
+    top: 5px;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6d6d6d;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+
+@media only screen and (max-width:1360px) {
+    .contacts-section {
+        width: 46%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .contacts-section {
+        width: 70%;
+    }
+
+    .sent {
+        max-width: 70%;
+    }
+
+    .got {
+        max-width: 70%;
+    }
+}
+
+.hide-msg-section {
+    transform: translateY(94%) scale(0);
+    position: absolute;
+}
+
+
+.active-msg-section {
+    transform: translateY(0) scale(1);
+    position: relative;
+    background-color: white;
+
+}
+
+
+
+.toggle-contact-section{
+    width: 0%;
+
+}
+.contact-option-toggler{
+    width: 21px;
+    display: flex;
+    height: 21px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all .5s;
+    left: 24.2%;
+
+}
+.toggle-contact-option{
+    left: 20px;
+
+}
+.contact{
+    justify-content: center;
+
+}
+.contact-option-toggler-wrapper{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 9px 20px 0px #00000045;
+}
+
+
+
+@media only screen and (max-width: 725px){
+
+    .messages-section{
+        width: 100%;
+    }
+    .contacts-section{
+        background-color: white;
+        left: 0;
+        width: 0%;
+        position: absolute;
+    }
+
+    .toggle-contact-section{
+        width: 80%;
+
+    }
+    .contact-option-toggler{
+        width: 21px;
+        display: flex;
+        height: 21px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transition: all .5s;
+        left: 30px;
+ 
+    }
+    .toggle-contact-option{
+        left: 82%;
+    }
+    .contact{
+        justify-content: center;
+
+    }
+    .contact-option-toggler-wrapper{
+        width: 100%;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 9px 20px 0px #00000045;
+    }
+    
+}
