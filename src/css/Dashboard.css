@@ -237,11 +237,14 @@ html{
   display: flex;
   flex-direction: column;
   transition: all .3s cubic-bezier(0.74, 0.56, 0, 0.81);
+  background: #f4f6f9;
   z-index: 20;
 
 }
 .dashboard-content{
   margin-top: 68px;
+  padding-left: 10px;
+
 }
 .dashboard-content-wraper-full-width{
   width: 100%;

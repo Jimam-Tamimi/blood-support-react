@@ -1,0 +1,96 @@
+
+    .details-section {
+        width: 48%;
+
+    }
+
+    .image-section {
+        width: 48%;
+        height: 100%;
+    }
+
+    .request-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @media only screen and (max-width:670px) {
+        .my-cus-row {
+            flex-wrap: wrap;
+            flex-direction: column-reverse !important;
+        }
+
+        .image-section {
+            width: 90%;
+        }
+
+        .details-section {
+            width: 90%;
+
+        }
+
+        .act-button-grp {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .act-button-grp>button {
+            margin: 10px 0px;
+        }
+
+        .card-body {
+            padding: 0;
+        }
+    }
+
+    #help-form {
+        transition: all .5s;
+        left: 57%;
+        position: relative;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .help-form-show {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+        left: 0 !important;
+    }
+
+    .select-donor-type {
+        transition: all .5s;
+        position: absolute;
+        bottom: 28%;
+        width: 90%;
+        left: 5%;
+        opacity: 1;
+    }
+
+    .select-donor-type-hide {
+        bottom: 100% !important;
+        opacity: 0 !important;
+        transform: scale(0) !important;
+
+    }
+
+    .profile-cont {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .profile-cont .profile-img {
+
+        width: 40px;
+        border-radius: 200px;
+        height: 40px;
+        position: relative;
+        right: 10px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .profile {
+        max-width: 205px;
+    }
