@@ -28,7 +28,7 @@ function Contents(props) {
     { path: '/dashboard/', component: Home, animationClassName: 'page-1' },
     { path: '/dashboard/request/:slug/:requestid/', component: SingleRequest, animationClassName: 'page-2' },
     { path: '/dashboard/help-people', component: HelpPeople, animationClassName: 'page-3' },
-    { path: '/dashboard/make-request', component: MakeRequest, animationClassName: 'page-4' },
+    { path: '/dashboard/make-request/', component: MakeRequest, animationClassName: 'page-4' },
     { path: '/dashboard/current-blood-donations', component: CurrentBloodDonations, animationClassName: 'page-5' },
     { path: '/dashboard/your-blood-requests', component: YourBloodRequests, animationClassName: 'page-1' },
     { path: '/dashboard/your-donor-requests', component: YourDonorRequests, animationClassName: 'page-2' },
